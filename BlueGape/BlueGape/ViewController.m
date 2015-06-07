@@ -10,8 +10,8 @@
 #import "BGBingManager.h"
 #import "ContentCollectionViewCell.h"
 #import "ImageModel.h"
+#import "UIImageView+AFNetworking.h"
 #import "SGSStaggeredFlowLayout.h"
-#import "Haneke.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *contentCollectionView;
@@ -73,8 +73,8 @@ static const CGFloat kCellEqualSpacing = 15.0f;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    ImageModel *imageRecord = [self.images objectAtIndex:indexPath.row];
-    return imageRecord.thumbnailSize;
+    
+//    return CGSizeMake(100, 100);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -93,9 +93,8 @@ static const CGFloat kCellEqualSpacing = 15.0f;
                                                                        forIndexPath:indexPath];
     ImageModel *imageRecord = [self.images objectAtIndex:indexPath.row];
     
-//    [cell.contentImageView setImageWithURL:imageRecord.thumbnailURL];
-    [cell.contentImageView  hnk_setImageFromURL:imageRecord.thumbnailURL];
-
+    [cell.contentImageView setImageWithURL:imageRecord.thumbnailURL];
+    
     if (indexPath.row == [self.images count] - 1) {
         [self loadImagesWithOffset:(int)[self.images count]];
     };
@@ -110,6 +109,17 @@ static const CGFloat kCellEqualSpacing = 15.0f;
 {
     
     [self.contentCollectionView deselectItemAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - CHTCollectionViewWaterfallLayoutDelagate
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(CHTCollectionViewWaterfallLayout *)collectionViewLayout
+ heightForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ImageModel *imageRecord = [self.images objectAtIndex:indexPath.row];
+    
+    return imageRecord.thumbnailSize.height * (50 / imageRecord.thumbnailSize.width);
 }
 
 

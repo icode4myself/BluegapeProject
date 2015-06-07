@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ew9-nl-z8S">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1mb-th-rZs"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-6A-gWg">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M11-7w-AZY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="CTn-ZH-uz3"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="xfe-3K-lYo"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N7v-6A-gWg" firstAttribute="top" secondItem="ew9-nl-z8S" secondAttribute="bottom" id="0u2-z6-8ZM"/>
+                            <constraint firstAttribute="trailing" secondItem="N7v-6A-gWg" secondAttribute="trailing" id="7Xa-lQ-rto"/>
+                            <constraint firstItem="ew9-nl-z8S" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="hVh-r3-oAW"/>
+                            <constraint firstItem="N7v-6A-gWg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="twC-xV-3Gd"/>
+                            <constraint firstItem="ew9-nl-z8S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vMR-aR-50c"/>
+                            <constraint firstAttribute="trailing" secondItem="ew9-nl-z8S" secondAttribute="trailing" id="wmQ-5A-XTJ"/>
+                            <constraint firstAttribute="bottom" secondItem="N7v-6A-gWg" secondAttribute="bottom" id="y59-VF-rCn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentCollectionView" destination="N7v-6A-gWg" id="Es6-UH-meD"/>
+                        <outlet property="searchBar" destination="ew9-nl-z8S" id="5Br-EY-Qid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

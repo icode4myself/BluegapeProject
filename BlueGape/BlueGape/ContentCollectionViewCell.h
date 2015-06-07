@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContentCollectionViewCell.h
 //  BlueGape
 //
 //  Created by Gaurav Kumar Singh on 06/06/15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate>
-
+@interface ContentCollectionViewCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *contentImageView;
 
 @end
-
-
