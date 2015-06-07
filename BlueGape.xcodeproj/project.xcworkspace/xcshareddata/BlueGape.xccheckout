@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>751168CD-EA04-48D6-A98A-CA3B329CF6AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlueGape</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>103F8E68E8F9E327C20E6B7AEBD230083A87201B</key>
+		<string>https://github.com/icode4myself/BluegapeProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlueGape.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>103F8E68E8F9E327C20E6B7AEBD230083A87201B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/icode4myself/BluegapeProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>103F8E68E8F9E327C20E6B7AEBD230083A87201B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>103F8E68E8F9E327C20E6B7AEBD230083A87201B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlueGape</string>
+		</dict>
+	</array>
+</dict>
+</plist>

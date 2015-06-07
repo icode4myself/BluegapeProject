@@ -26,29 +26,13 @@
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-6A-gWg">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewLayout key="collectionViewLayout" id="cRE-BZ-1T8" customClass="CHTCollectionViewWaterfallLayout"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="8Oh-3U-ycY" customClass="ContentCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81j-eh-a9d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="81j-eh-a9d" firstAttribute="leading" secondItem="8Oh-3U-ycY" secondAttribute="leading" id="E3D-dk-eIp"/>
-                                            <constraint firstAttribute="bottom" secondItem="81j-eh-a9d" secondAttribute="bottom" id="Xyd-WI-etP"/>
-                                            <constraint firstItem="81j-eh-a9d" firstAttribute="top" secondItem="8Oh-3U-ycY" secondAttribute="top" id="gSH-bW-H5R"/>
-                                            <constraint firstAttribute="trailing" secondItem="81j-eh-a9d" secondAttribute="trailing" id="t2Q-1w-hjI"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M11-7w-AZY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="CTn-ZH-uz3"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="xfe-3K-lYo"/>

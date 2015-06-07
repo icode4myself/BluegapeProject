@@ -11,6 +11,7 @@
 #import "ContentCollectionViewCell.h"
 #import "ImageModel.h"
 #import "UIImageView+AFNetworking.h"
+#import "SGSStaggeredFlowLayout.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *contentCollectionView;
@@ -47,14 +48,24 @@ static const CGFloat kCellEqualSpacing = 15.0f;
     [self.contentCollectionView registerClass:[ContentCollectionViewCell class] forCellWithReuseIdentifier:ImageCellIdentifier];
 
     
-    CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.contentCollectionView.collectionViewLayout;
-    layout.sectionInset = UIEdgeInsetsMake(0, kCellEqualSpacing, 0, kCellEqualSpacing);
+//    _flowLayout = [[SGSStaggeredFlowLayout alloc] init];
+    SGSStaggeredFlowLayout *flowLayout = [[SGSStaggeredFlowLayout alloc] init];//self.contentCollectionView.collectionViewLayout;
+    
+    flowLayout.layoutMode = SGSStaggeredFlowLayoutMode_Even;
+    flowLayout.minimumLineSpacing = 2.0f;
+    flowLayout.minimumInteritemSpacing = 2.0f;
+    flowLayout.sectionInset = UIEdgeInsetsMake(0.0f, 10.0f, 0.0f, 10.0f);
+    flowLayout.itemSize = CGSizeMake(75.0f, 75.0f);
+    self.contentCollectionView.collectionViewLayout = flowLayout;
+    
+//    CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.contentCollectionView.collectionViewLayout;
+//    layout.sectionInset = UIEdgeInsetsMake(0, kCellEqualSpacing, 0, kCellEqualSpacing);
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.contentCollectionView.collectionViewLayout;
-    
-    layout.columnCount = 2;
+//    CHTCollectionViewWaterfallLayout *layout = (CHTCollectionViewWaterfallLayout *)self.contentCollectionView.collectionViewLayout;
+//    
+//    layout.columnCount = 2;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,7 +73,8 @@ static const CGFloat kCellEqualSpacing = 15.0f;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(100, 100);
+    
+//    return CGSizeMake(100, 100);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView

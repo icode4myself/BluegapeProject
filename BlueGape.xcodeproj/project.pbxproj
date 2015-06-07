@@ -35,6 +35,7 @@
 		F48E9D861B2306E300E9E588 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E9D851B2306E300E9E588 /* ImageModel.m */; };
 		F48E9D891B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E9D881B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.m */; };
 		F48E9D8C1B230C8800E9E588 /* BGBingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E9D8B1B230C8800E9E588 /* BGBingManager.m */; };
+		F48E9D911B24152F00E9E588 /* SGSStaggeredFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E9D901B24152F00E9E588 /* SGSStaggeredFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		F48E9D881B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		F48E9D8A1B230C8800E9E588 /* BGBingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGBingManager.h; sourceTree = "<group>"; };
 		F48E9D8B1B230C8800E9E588 /* BGBingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGBingManager.m; sourceTree = "<group>"; };
+		F48E9D8F1B24152F00E9E588 /* SGSStaggeredFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSStaggeredFlowLayout.h; sourceTree = "<group>"; };
+		F48E9D901B24152F00E9E588 /* SGSStaggeredFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSStaggeredFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 		F48E9D8E1B233E5C00E9E588 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				F48E9D8F1B24152F00E9E588 /* SGSStaggeredFlowLayout.h */,
+				F48E9D901B24152F00E9E588 /* SGSStaggeredFlowLayout.m */,
 				F48E9D881B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.m */,
 				F48E9D871B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.h */,
 				F48E9D4D1B2306BF00E9E588 /* UIKit+AFNetworking */,
@@ -375,6 +380,7 @@
 				F48E9D7D1B2306CE00E9E588 /* AFHTTPSessionManager.m in Sources */,
 				F48E9D631B2306BF00E9E588 /* UIImageView+AFNetworking.m in Sources */,
 				F48E9D891B230C1000E9E588 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				F48E9D911B24152F00E9E588 /* SGSStaggeredFlowLayout.m in Sources */,
 				F48E9D5F1B2306BF00E9E588 /* AFNetworkActivityIndicatorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
