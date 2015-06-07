@@ -125,6 +125,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F43716D41B2428BA0062E574 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F48E9D4B1B23003200E9E588 /* ContentCollectionViewCell.m */,
+				F48E9D4A1B23003200E9E588 /* ContentCollectionViewCell.h */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		F43716D51B2428D00062E574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F48E9D841B2306E300E9E588 /* ImageModel.h */,
+				F48E9D851B2306E300E9E588 /* ImageModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F43716D61B2428E80062E574 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F48E9D8A1B230C8800E9E588 /* BGBingManager.h */,
+				F48E9D8B1B230C8800E9E588 /* BGBingManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F43716D71B2429020062E574 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F48E9D2B1B22FF8500E9E588 /* ViewController.h */,
+				F48E9D2C1B22FF8500E9E588 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		F48E9D181B22FF8500E9E588 = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +185,10 @@
 				F48E9D8E1B233E5C00E9E588 /* External */,
 				F48E9D281B22FF8500E9E588 /* AppDelegate.h */,
 				F48E9D291B22FF8500E9E588 /* AppDelegate.m */,
-				F48E9D841B2306E300E9E588 /* ImageModel.h */,
-				F48E9D851B2306E300E9E588 /* ImageModel.m */,
-				F48E9D8A1B230C8800E9E588 /* BGBingManager.h */,
-				F48E9D8B1B230C8800E9E588 /* BGBingManager.m */,
-				F48E9D2B1B22FF8500E9E588 /* ViewController.h */,
-				F48E9D2C1B22FF8500E9E588 /* ViewController.m */,
-				F48E9D4A1B23003200E9E588 /* ContentCollectionViewCell.h */,
-				F48E9D4B1B23003200E9E588 /* ContentCollectionViewCell.m */,
+				F43716D61B2428E80062E574 /* Managers */,
+				F43716D51B2428D00062E574 /* Models */,
+				F43716D71B2429020062E574 /* Controllers */,
+				F43716D41B2428BA0062E574 /* views */,
 				F48E9D2E1B22FF8500E9E588 /* Main.storyboard */,
 				F48E9D311B22FF8500E9E588 /* Images.xcassets */,
 				F48E9D331B22FF8500E9E588 /* LaunchScreen.xib */,
